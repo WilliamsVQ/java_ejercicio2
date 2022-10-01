@@ -10,12 +10,12 @@ public class ejecicio2 {
         double a = leer.nextDouble();
         System.out.println("El precio con IVA es:");
         DecimalFormat b = new DecimalFormat("#.##");
-        a = Double.valueOf(b.format(precio(a)));
-        System.out.println(a);
+        System.out.println(Double.valueOf(b.format(precio(a))));;
     }
     public static double precio(double a){
         a = a + (a*21/100);
         return a;
+
     }
 }
 
